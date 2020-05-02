@@ -6,13 +6,6 @@ topics:
     min.insync.replicas: 2
     segment.bytes: 104857600
     max.message.bytes: 2097164
-  test12345:
-    name: test12345
-    partitions: 6
-    replication.factor: 3
-    min.insync.replicas: 2
-    segment.bytes: 104857600
-    max.message.bytes: 2097164
   ivan-test:
     name: ivan-test
     partitions: 6
