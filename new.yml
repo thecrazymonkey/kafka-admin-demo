@@ -1,0 +1,42 @@
+topics:
+  test123:
+    name: test123
+    partitions: 6
+    replication.factor: 3
+    min.insync.replicas: 2
+    segment.bytes: 104857600
+    max.message.bytes: 2097164
+  test12345:
+    name: test12345
+    partitions: 6
+    replication.factor: 3
+    min.insync.replicas: 2
+    segment.bytes: 104857600
+    max.message.bytes: 2097164
+  ivan-test:
+    name: ivan-test
+    partitions: 6
+    replication.factor: 3
+    min.insync.replicas: 2
+    cleanup.policy: delete
+    retention.ms: 604800000
+    segment.bytes: 1073741824
+    max.message.bytes: 2097164
+    min.compaction.lag.ms: 0
+    message.timestamp.type: CreateTime
+    delete.retention.ms: 86400000
+    retention.bytes: -1
+    segment.ms: 604800000
+    message.timestamp.difference.max.ms: 9223372036854775807
+  test-compact:
+    name: test-compact
+    partitions: 1
+    replication.factor: 3
+    min.insync.replicas: 2
+    cleanup.policy: compact
+    segment.bytes: 104857600
+    max.message.bytes: 2097164
+    segment.ms: 600000
+
+acls: {}
+
