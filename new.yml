@@ -63,4 +63,20 @@ acls:
     operation: READ
     permission: ALLOW
     host: '*'
+  project-1-5:
+    resource-type: group
+    resource-name: somegroupprefix
+    resource-pattern: PREFIXED
+    principal: User:65620
+    operation: READ
+    permission: ALLOW
+    host: '*'
+  project-1-6:
+    resource-type: topic
+    resource-name: sometopicprefix
+    resource-pattern: PREFIXED
+    principal: User:65620
+    operation: READ, DESCRIBE
+    permission: ALLOW
+    host: '*'
 
