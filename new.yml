@@ -44,8 +44,8 @@ acls:
     resource-name: test123
     resource-pattern: LITERAL
     principal: User:65617
-    operation: ALL
-    permission: READ, DESCRIBE
+    operation: READ, DESCRIBE
+    permission: ALLOW
     host: '*'
   project-1-3:
     resource-type: topic
@@ -53,6 +53,14 @@ acls:
     resource-pattern: LITERAL
     principal: User:65620
     operation: WRITE
+    permission: ALLOW
+    host: '*'
+  project-1-4:
+    resource-type: group
+    resource-name: testgroup
+    resource-pattern: LITERAL
+    principal: User:65617
+    operation: READ
     permission: ALLOW
     host: '*'
 
