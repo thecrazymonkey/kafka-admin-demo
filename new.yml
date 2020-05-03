@@ -45,7 +45,7 @@ acls:
     resource-pattern: LITERAL
     principal: User:65617
     operation: ALL
-    permission: ALLOW
+    permission: READ, DESCRIBE
     host: '*'
   project-1-3:
     resource-type: topic
