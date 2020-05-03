@@ -44,7 +44,7 @@ acls:
     resource-name: test123
     resource-pattern: LITERAL
     principal: User:65617
-    operation: READ, DESCRIBE
+    operation: READ
     permission: ALLOW
     host: '*'
   project-1-3:
