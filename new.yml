@@ -30,13 +30,6 @@ topics:
     segment.bytes: 104857600
     max.message.bytes: 2097164
     segment.ms: 600000
-  test1233:
-    name: prod-big
-    partitions: 24
-    replication.factor: 3
-    min.insync.replicas: 2
-    segment.bytes: 104857600
-    max.message.bytes: 2097164
 
 acls:
   project-1-2:
@@ -76,14 +69,6 @@ acls:
     resource-name: sometopicprefix
     resource-pattern: PREFIXED
     principal: User:65620
-    operation: READ, DESCRIBE
-    permission: ALLOW
-    host: '*'
-  project-1-7:
-    resource-type: topic
-    resource-name: prod-big
-    resource-pattern: LITERAL
-    principal: User:65620, User:65617
     operation: READ, DESCRIBE
     permission: ALLOW
     host: '*'
