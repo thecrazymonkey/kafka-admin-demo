@@ -30,7 +30,13 @@ topics:
     segment.bytes: 104857600
     max.message.bytes: 2097164
     segment.ms: 600000
-
+  test1234:
+    name: prod
+    partitions: 18
+    replication.factor: 3
+    min.insync.replicas: 2
+    segment.bytes: 104857600
+    max.message.bytes: 2097164
 acls:
   project-1-2:
     resource-type: topic
